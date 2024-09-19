@@ -1,5 +1,6 @@
 from helpers import (
-    add_book, view_books, lend_book, return_book, view_borrowers, exit_program
+    add_book, view_books, lend_book, return_book, view_borrowers, edit_borrower, view_overdue_books,
+    search_books, search_borrowers, exit_program
 )
 
 def main():
@@ -18,6 +19,14 @@ def main():
             return_book()
         elif choice == "5":
             view_borrowers()
+        elif choice == "6":
+            edit_borrower()
+        elif choice == "7":
+            view_overdue_books()
+        elif choice == "8":
+            search_books()
+        elif choice == "9":
+            search_borrowers()
         else:
             print("Invalid choice")
 
@@ -29,6 +38,10 @@ def menu():
     print("3. Lend a book")
     print("4. Return a book")
     print("5. View borrowers")
+    print("6. Edit borrower details")
+    print("7. View overdue books")
+    print("8. Search books")
+    print("9. Search borrowers")
 
 if __name__ == "__main__":
     main()
