@@ -1,0 +1,52 @@
+Book Lending System
+
+1. Problem Statement
+Managing borrowed and lent books can quickly become confusing, especially when multiple transactions occur simultaneously. 
+Users often forget who they’ve lent books to, the return date, or even which books they still have on loan. 
+This lack of organization can result in books being lost, not returned on time, or mixed up between multiple borrowers. 
+Libraries, personal collections, and informal lending among friends and family require an efficient way to track book lending and borrowing.
+
+2. Solution
+The Book Lending System is a command-line interface (CLI) tool designed to help individuals or small libraries efficiently 
+track books that are lent out or borrowed. It allows users to add books, track borrowers, set due dates, and monitor whether books have been returned. 
+This system solves the issue of misplaced books and missed return deadlines by providing an organized database that records all lending transactions, 
+making it easy to see which books are out, who has them, and when they are due for return.
+
+
+3. Features
+
+1. Add a New Book
+      Users can input the title and author of the book. 
+      Input validation ensures that the book title and author contain alphabetic characters and are not purely numeric.
+
+2. View All Books
+      Users can see all the books available in the library, whether they are currently available or lent out.
+
+3. Lend a Book
+      Users select a book by ID, input borrower details (name and contact information), and specify a due date. 
+      If the borrower does not exist in the system, they are added automatically.
+
+4. Return a Book
+      Users select an active transaction (a book currently lent out) and mark it as returned, updating the system and making the book available for lending again.
+
+
+5. View Borrowers
+      Shows borrower details along with the borrowed books and due dates. Automatically removes borrowers who have returned all books.
+
+6. Edit Borrower Details
+      Users can modify a borrower's name, contact information, or the due date of a borrowed book. This helps in keeping borrower information up to date.
+
+7. View Overdue Books
+      Checks all active transactions and displays books that are past their due date, along with borrower details, number of days overdue, and the total fine.
+
+8. Search Books
+      Users can enter a keyword, and the system will display all books that match the keyword in either the title or the author fields.
+      
+9. Search Borrowers
+      Users can enter a keyword, and the system will display all borrowers that match the keyword in either the name or contact information fields.
+
+4. Technical Expectations
+Python
+CLI
+Sqlite3
+
